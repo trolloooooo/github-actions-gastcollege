@@ -1,0 +1,19 @@
+{
+    "name": "Laravel Development",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": ".."
+    },
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": [
+        "bmewburn.vscode-intelephense-client",
+        "onecentlin.laravel-blade",
+        "onecentlin.laravel5-snippets"
+    ],
+    "forwardPorts": [8000],
+    "postCreateCommand": "composer install && cp .env.example .env && php artisan key:generate",
+    "postStartCommand": "php artisan serve --host=0.0.0.0 --port=8000",
+    "shutdownCommand": "echo 'Codespace is shutting down...'"
+}
