@@ -1,5 +1,5 @@
 <div>
-    <h2 class="text-2xl text-center font-bold my-8">Mijn Pokemons</h2>
+    <h2 class="text-2xl text-center font-bold my-8">Mijn Pokemon</h2>
     <div class="grid gap-6 lg:grid-cols-4 lg:gap-8">
 
         @forelse ($myPokemons as $pokemon)
@@ -25,12 +25,12 @@
             </div>
         @empty
             <div class="text-center col-span-4">
-                Je hebt nog geen Pokemons.
+                Je hebt nog geen Pokemon.
             </div>
         @endforelse
     </div>
 
-    <h2 class="text-2xl text-center font-bold my-8">Alle Pokemons</h2>
+    <h2 class="text-2xl text-center font-bold my-8">Alle Pokemon</h2>
 
     @if ($pokemons->hasPages())
         <div class="mb-8">
@@ -42,7 +42,7 @@
         @foreach ($pokemons as $pokemon)
             <div class="bg-white dark:bg-zinc-900 rounded-lg shadow-[0px 4px 34px rgba(0,0,0,0.06)]">
                 <img
-                    class="object-cover object-top w-full h-40 rounded-t-lg"
+                    class="object-cover object-top w-full h-50 rounded-t-lg"
                     src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{{ $pokemon->pokeapi_id }}.png"
                     alt="{{ $pokemon->name }}"
                 />
