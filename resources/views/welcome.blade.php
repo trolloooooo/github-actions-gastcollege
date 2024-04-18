@@ -61,7 +61,7 @@
                                         src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{{ $pokemon->pokeapi_id }}.png"
                                         alt="{{ $pokemon->name }}"
                                     />
-                                    <div class="p-6">
+                                    <div class="p-6 text-center">
                                         <h2 class="text-xl font-semibold">{{ $pokemon->name }}</h2>
                                         <p class="text-sm mt-3">{{ $pokemon->description }}</p>
                                     </div>
