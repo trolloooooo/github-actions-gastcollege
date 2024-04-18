@@ -13,7 +13,7 @@
         "onecentlin.laravel5-snippets"
     ],
     "forwardPorts": [8000],
-    "postCreateCommand": "composer install && cp .env.example .env && php artisan key:generate && touch database/database.sqlite",
+    "postCreateCommand": "bash .devcontainer/start-container.sh",
     "postStartCommand": "php artisan serve --host=0.0.0.0 --port=8000",
     "shutdownCommand": "echo 'Codespace is shutting down...'"
 }
