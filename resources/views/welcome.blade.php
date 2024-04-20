@@ -53,9 +53,9 @@
                     </header>
 
                     <main class="mt-6">
-                        <div class="grid gap-6 lg:grid-cols-4 lg:gap-8">
+                        <div class="grid gap-6 lg:grid-cols-4 lg:gap-8 pokemon-list">
                             @foreach (\App\Models\Pokemon::all() as $pokemon)
-                                <div class="bg-white dark:bg-zinc-900 rounded-lg shadow-[0px 4px 34px rgba(0,0,0,0.06)]">
+                                <div class="bg-white dark:bg-zinc-900 rounded-lg shadow-[0px 4px 34px rgba(0,0,0,0.06)] pokemon">
                                     <img
                                         class="object-cover object-top w-full h-40 rounded-t-lg"
                                         src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{{ $pokemon->pokeapi_id }}.png"
