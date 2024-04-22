@@ -5,7 +5,7 @@
 De opdracht van vandaag: Zorg ervoor dat de volgende testen gedraaid worden bij elke push:
 
 - PHPStan: `vendor/bin/phpstan analyse`
-- Laravel Pint: `vendor/bin/pint`
+- Laravel Pint: `vendor/bin/pint --test`
 - Playwright: `npx playwright test`
 
 ![img.png](img.png)
