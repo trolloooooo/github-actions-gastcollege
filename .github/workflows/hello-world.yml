@@ -1,5 +1,5 @@
 name: GitHub Actions Demo
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+run-name: ${{ github.actor }} testing!
 on: [push]
 
 jobs:
@@ -18,4 +18,9 @@ jobs:
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - run: echo "Goedemorgen"
+      - name: Setup PHP with PECL extension 
+        uses: shivammathur/setup-php@v2
+        with:
+        php-version: '8.3'
+      - run: composer install
       - run: vendor/bin/phpstan analyse
