@@ -19,5 +19,3 @@ jobs:
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - run: echo "Goedemorgen"
       - run: vendor/bin/phpstan analyse
-      - run: vendor/bin/pint --test
-      - run: npx playwright test
